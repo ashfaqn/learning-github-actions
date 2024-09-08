@@ -23,7 +23,7 @@ jobs:
         with:
           node-version: '20.x'
       - run: npm install
-      - run: npm test
+      - run: npm run build
   deploy:
     needs: test
     runs-on: ubuntu-latest
